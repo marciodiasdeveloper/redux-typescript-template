@@ -41,3 +41,5 @@ const cart: Reducer<ICartState> = (state = INITIAL_STATE, action) => {
         }
     })
 }
+
+export default cart;
