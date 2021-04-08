@@ -30,7 +30,7 @@ const CatalogItem: React.FC<CatalogItemProps> = ({ product }) => {
                 Comprar
             </button>
 
-            { hasFailedStockCheck && <span style={{ color: 'red' }}></span>}
+            { hasFailedStockCheck && <span style={{ color: 'red' }}>Falta de estoque</span>}
         </article>
     )
 }
