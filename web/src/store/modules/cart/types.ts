@@ -1,10 +1,15 @@
-import { IProduct } from "./types";
+export interface IProduct {
+    id: number;
+    title: string;
+    price: number;
+}
 
-export function addProductToCart(product: IProduct) {
-    return {
-        type: 'ADD_PRODUCT_TO_CART',
-        payload: {
-            product,
-        }
-    }
+export interface ICartItem {
+    product: IProduct;
+    quantity: number;
+}
+
+export interface ICartState {
+    items: ICartItem[];
+    failedStockCheck: number[];
 }
