@@ -33,13 +33,13 @@ const cart: Reducer<ICartState> = (state = INITIAL_STATE, action) => {
                 break;
             }
             case ActionTypes.addProductToCartFailure: {
-
                 break;
             }
-        default: {
-            return draft;
+            default: {
+                return draft;
+            }
         }
-    })
+    });
 }
 
 export default cart;
